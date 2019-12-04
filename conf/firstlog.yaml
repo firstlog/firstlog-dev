@@ -25,6 +25,6 @@ Output:
 
     # 正则匹配收集
     Detail:
-      Enable: fals   # 是否开启 false（关闭） true（开启）
+      Enable: false   # 是否开启 false（关闭） true（开启）
       Regex: '([^\s]+)\s([^\s]+)\s([^\s]+)\s\[([^\[]+)\]\s"([^"]+)"\s([^\s]+)\s([^\s]+)\s"([^"]+)"\s"([^"]+)"\s"([^"]+)"\s([^"]+)'
       Template: '{"RemoteAddr":"$1","RemoteUser":"$2","TimeLocal":"$4","Request":"$5","Status":"$6","BodyBytesSent":"$7","HttpReferer":"$8","HttpXForwardedFor":"$9","RequestTime":"$11"}'
